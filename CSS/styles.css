@@ -8,12 +8,10 @@
     --dark-color:#1F2937;
     --light-color:#F9FAF8;
     --secondary-color:#E5E7EB;
+    --transparent-color:transparent;
 }
 
-img{
-    width: 400px;
-    height: auto;
-}
+
 /* Base classes */
 .container{
     width: 80%;
@@ -24,18 +22,54 @@ header .container{
     justify-content: space-between;
     align-items: center;
 }
+.showcase img{
+    width: 400px;
+    height: auto;
+}
 a:hover{
     border-bottom: 2px solid #F9FAF8;
 }
 .btn{
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: .5rem 1rem;
 }
-
+.btn-outline{
+    border: 2px solid #fff;
+}
+.item{
+    flex: 1;
+}
+.main img{
+    width: 100%;
+}
+.quote{
+    font-style: italic;
+}
+.call-to-action .sign-up,
+.quote .container div{
+    width: 80%;
+    margin: auto;
+}
+.call-to-action .flex{
+    justify-content: space-between;
+    align-items: center;
+}
 /* utilities */
+.bg-secondary{
+    background-color: var(--secondary-color);
+}
 .bg-dark{
     background-color: var(--dark-color);
+}
+.bg-transparent{
+    background-color: var(--transparent-color);
+}
+.text-center{
+    text-align: center;
+}
+.text-end{
+    text-align: end;
 }
 .text-light{
     color: var(--light-color);
@@ -50,6 +84,8 @@ a:hover{
     background-color: var(--primary-color)
 }
 .border-primary{
+    border-width: 3px;
+    border-style: solid;
     border-color: var(--primary-color);
 }
 .font-sm{
@@ -57,6 +93,9 @@ a:hover{
 }
 .font-md{
     font-size: 24px;
+}
+.font-mdl{
+    font-size: 36px;
 }
 .font-lg{
     font-size: 48px;
@@ -76,8 +115,20 @@ a:hover{
 .p-block-1{
     padding-block: 1rem;
 }
+.p-block-2{
+    padding-block: 2rem;
+}
 .p-block-3{
     padding-block: 3rem;
+}
+.p-block-8{
+    padding-block: 8rem;
+}
+.p-block-5{
+    padding-block: 4rem;
+}
+.border-rounded{
+    border-radius: 16px;
 }
 .decoration-none{
     text-decoration: none;
